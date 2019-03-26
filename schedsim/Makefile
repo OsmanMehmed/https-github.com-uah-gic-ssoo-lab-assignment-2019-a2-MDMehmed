@@ -20,5 +20,5 @@ schedsim_rr: ${OBJS_RR} ./lib/libjsmn.a
 	gcc ${CFLAGS} -o schedsim_rr ${OBJS_RR} -L./lib -ljsmn
 
 clean:
-	@rm -rf ${OBJS_FIFO} ${OBJS_PRIO} ${OBJS_RR} ./lib/libjsmn.a
+	@rm -rf ${OBJS_FIFO} ${OBJS_PRIO} ${OBJS_RR} ./lib/libjsmn.a ./lib/jsmn.o
 	@rm -rf schedsim_fifo schedsim_prio schedsim_rr
