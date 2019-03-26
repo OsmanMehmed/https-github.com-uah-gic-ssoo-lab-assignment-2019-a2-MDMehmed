@@ -1,0 +1,47 @@
+{
+    "tasks": [{
+        "command": "T1",
+        "start_time": 0,
+        "priority": 99,
+        "behaviour": [{
+            "type": 0,
+            "duration": 1
+        },{
+            "type": 1,
+            "duration": 10
+        },{
+            "type": 0,
+            "duration": 1
+        }]
+    },
+    {
+        "command": "T2",
+        "start_time": 2,
+        "priority": 99,
+        "behaviour": [{
+            "type": 0,
+            "duration": 1
+        },{
+            "type": 2,
+            "duration": 10
+        },{
+            "type": 0,
+            "duration": 1
+        }]
+    },
+    {
+        "command": "T3",
+        "start_time": 0,
+        "priority": 99,
+        "behaviour": [{
+            "type": 0,
+            "duration": 4
+        },{
+            "type": 1,
+            "duration": 10
+        },{
+            "type": 0,
+            "duration": 1
+        }]
+    }]
+}
