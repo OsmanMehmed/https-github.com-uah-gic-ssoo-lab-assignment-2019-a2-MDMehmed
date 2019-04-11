@@ -207,6 +207,9 @@ PCB_t * extractFirst(TaskQueue_t * queue) {
         queue->first = queue->last = NULL;
         queue->size = 0;
 
+        first->next = NULL;
+        first->prev = NULL;
+
         return first;
 
     } else {
@@ -216,6 +219,9 @@ PCB_t * extractFirst(TaskQueue_t * queue) {
         next->prev = NULL; 
         queue->first = next;
         queue->size = queue->size - 1;
+
+        first->next = NULL;
+        first->prev = NULL;
 
         return first;
 
@@ -238,6 +244,9 @@ PCB_t * extractLast(TaskQueue_t * queue) {
         queue->first = queue->last = NULL;
         queue->size = 0;
 
+        last->next = NULL;
+        last->prev = NULL;
+
         return last;
 
     } else {
@@ -247,6 +256,9 @@ PCB_t * extractLast(TaskQueue_t * queue) {
         prev->next = NULL;
         queue->last = prev;
         queue->size = queue->size - 1;
+
+        last->next = NULL;
+        last->prev = NULL;
 
         return last;
 
